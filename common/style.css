@@ -1,25 +1,37 @@
 :root {
-    --white: #FCFCFC;
-    --black: #202020;
-    --yellow: #FAD566;
-    --blue: #81A2C7;
-    --green: #8DAF67;
-    --turquoise: #B3EBBF;
-    --orange: #FAA166;
+    --white: #BBC2CF;
+    --black: #282c34;
+    --yellow: #ECBE7B;
+    --blue: #51afef;
+    --teal: #4db5bd;
+    --green: #98BE65;
+    --dark-blue: #2257a0;
+    --cyan: #46d9ff;
+    --dark-cyan: #5699af;
+    --magenta: #c678dd;
+    --violet: #a9a1e1;
+    --orange: #da8548;
     --pink: #F77EBD;
-    --red: #F05E48;
-    --gray1: #292929;
-    --gray2: #525252;
-    --gray3: #6C6C6C;
-    --gray4: #7C7C7C;
-    --gray5: #AAAAAA;
-    --gray6: #393939;
+    --red: #FF6C6B;
+    --base0: #1b2229;
+    --base1: #1c1f24;
+    --base2: #202328;
+    --base3: #23272e;
+    --base4: #3f444a;
+    --base5: #5b6268;
+    --base6: #73797e;
+    --base7: #9ca0a4;
+    --base8: #dfdfdf;
+}
+
+@font-face {font-family: "Iosevka";
+            src: url("https://levesque.io/iosevka-regular.ttf") format("truetype");
 }
 
 body {
   color: var(--white);
   background-color: var(--black);
-  font-family: Helvetica;
+  font-family: "Iosevka", Helvetica;
   max-width: 900px;
   margin: auto;
 }
@@ -33,15 +45,15 @@ a {
 }
 
 a:visited {
-  color: var(--gray5);
+  color: var(--base6);
 }
 
 a:visited:hover {
-    color: var(--green);
+    color: var(--base7);
 }
 
 a:hover {
-    color: var(--green);
+    color: var(--cyan);
 }
 
 div.header {
@@ -62,7 +74,7 @@ div.nav a, div.nav a:visited {
 }
 
 div.nav a:hover, div.nav a.active {
-    color: var(--green);
+    color: var(--cyan);
 }
 
 /* Larger font for mobile devices */
